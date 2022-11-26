@@ -1,0 +1,174 @@
+/* =============================== Funciones =============================== */
+/* --------------------- Funciones Font --------------------- */
+/* =============================== Variables =============================== */
+/* --------------------- Font Size --------------------- */
+/* --------------------- Font family --------------------- */
+/* --------------------- Font Color --------------------- */
+/* --------------------- Null --------------------- */
+/* =============================== Index =============================== */
+/* --------------------- body --------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --------------------- Hearts --------------------- */
+body {
+  background-size: 100%;
+  background-image: url("../Images/FondoLove.png");
+  overflow: hidden;
+}
+
+/* --------------------- Hearts --------------------- */
+.Heart {
+  top: 50%;
+  left: 50%;
+  width: 5vw;
+  height: 5vw;
+  transition: 0.2s;
+  border: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  min-width: 40px;
+  min-height: 40px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  transform: translate(-50%, -50%);
+}
+.Heart .Contenido {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.Heart .Contenido img {
+  width: 100%;
+  height: 100%;
+}
+.Heart .Contenido .Nums {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-family: "Comic Sans MS";
+  font-size: clamp(20px, 2vw, 46px);
+  color: rgb(255, 255, 255);
+}
+
+/* --------------------- Valores --------------------- */
+#Valores {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* --------------------- Valores --------------------- */
+#Notificacion {
+  top: 25%;
+  left: 200%;
+  width: 20vw;
+  transition: 4s;
+  position: fixed;
+  transform: translate(-50%, -50%);
+}
+#Notificacion img {
+  width: 100%;
+  transition: 1s;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  transform: rotate(-45deg);
+}
+
+/* --------------------- Mensaje --------------------- */
+#Mensaje {
+  background-color: rgb(255, 255, 255);
+  left: 50%;
+  top: -120%;
+  width: 40%;
+  padding: 1vw;
+  transition: 4s;
+  position: fixed;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border-radius: 1vw;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border: 3px solid red;
+  transform: translate(-50%, -50%);
+}
+#Mensaje .Close {
+  top: 0;
+  left: 100%;
+  width: 3vw;
+  height: 3vw;
+  border: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  min-width: 30px;
+  min-height: 30px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  transform: translate(-50%, -50%);
+}
+#Mensaje .Close img {
+  width: 100%;
+  height: 100%;
+}
+#Mensaje .Imagen {
+  width: 60%;
+  margin: 0 auto;
+}
+#Mensaje .Imagen.Big {
+  width: 100%;
+}
+#Mensaje .Imagen img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1vw;
+}
+#Mensaje .Img {
+  width: 10vw;
+  height: 10vw;
+  margin: 0 auto;
+}
+#Mensaje .Img img {
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+#Mensaje .Text {
+  font-weight: bold;
+  font-family: "Comic Sans MS";
+  font-size: clamp(15px, 1.6vw, 26px);
+  color: rgb(0, 0, 0);
+}
+#Mensaje .Title {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Comic Sans MS";
+  font-size: clamp(20px, 2vw, 46px);
+  color: red;
+}
+
+/* --------------------- Sounds --------------------- */
+.Sound {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  #Mensaje {
+    width: 60%;
+  }
+}
+@media (max-width: 600px) {
+  #Mensaje {
+    width: 80%;
+  }
+}/*# sourceMappingURL=Styles.css.map */
