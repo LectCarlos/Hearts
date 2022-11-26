@@ -1,0 +1,197 @@
+/* =============================== Funciones =============================== */
+/* --------------------- Funciones Font --------------------- */
+@mixin Font($MinSize, $Size, $MaxSize, $Family, $FontColor, $Bold) {
+    font: {
+        weight: $Bold;
+        family: $Family;
+        size: clamp($MinSize, $Size, $MaxSize);
+    }
+
+    color: $FontColor;
+}
+
+/* =============================== Variables =============================== */
+/* --------------------- Font Size --------------------- */
+$MinTextSize: 15px;
+$TextSize: 1.6vw;
+$MaxTextSize: 26px;
+
+$MinTitleSize: 20px;
+$TitleSize: 2vw;
+$MaxTitleSize: 46px;
+
+/* --------------------- Font family --------------------- */
+$FamilyFont: 'Comic Sans MS';
+
+/* --------------------- Font Color --------------------- */
+$FontColorW: rgb(255, 255, 255);
+$FontColorD: rgb(0, 0, 0);
+
+/* --------------------- Null --------------------- */
+$None: rgba(0, 0, 0, 0);
+
+/* =============================== Index =============================== */
+/* --------------------- body --------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------- Hearts --------------------- */
+body {
+    background: {
+        size: 100%;
+        image: url('../Images/FondoLove.png');
+    }
+
+    overflow: hidden;
+}
+
+/* --------------------- Hearts --------------------- */
+.Heart {
+    top: 50%;
+    left: 50%;
+    width: 5vw;
+    height: 5vw;
+    transition: .2s;
+    border: $None;
+    cursor: pointer;
+    min-width: 40px;
+    min-height: 40px;
+    position: absolute;
+    background-color: $None;
+    transform: translate(-50%, -50%);
+
+    .Contenido {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .Nums {
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            @include Font($MinTitleSize, $TitleSize, $MaxTitleSize, $FamilyFont, $FontColorW, bold);
+        }
+    }
+}
+
+/* --------------------- Valores --------------------- */
+#Valores {
+    user-select: none;
+}
+
+/* --------------------- Valores --------------------- */
+#Notificacion {
+    top: 25%;
+    left: 200%;
+    width: 20vw;
+    transition: 4s;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    
+    img {
+        width: 100%;
+        transition: 1s;
+        height: max-content;
+        transform: rotate(-45deg);
+    }
+}
+
+/* --------------------- Mensaje --------------------- */
+#Mensaje {
+    background: {
+        color: rgb(255, 255, 255);
+    }
+
+    left: 50%;
+    top: -120%;
+    width: 40%;
+    padding: 1vw;
+    transition: 4s;
+    position: fixed;
+    user-select: none;
+    border-radius: 1vw;
+    height: max-content;
+    border: 3px solid red;
+    transform: translate(-50%, -50%);
+
+    .Close {
+        top: 0;
+        left: 100%;
+        width: 3vw;
+        height: 3vw;
+        border: $None;
+        cursor: pointer;
+        min-width: 30px;
+        min-height: 30px;
+        position: absolute;
+        background-color: $None;
+        transform: translate(-50%, -50%);
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .Imagen {
+        width: 60%;
+        margin: 0 auto;
+
+        &.Big {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 1vw;
+        }
+    }
+
+    .Img {
+        width: 10vw;
+        height: 10vw;
+        margin: 0 auto;
+
+        img {
+            width: 100%;
+            height: 100%;
+            user-select: none;
+        }
+    }
+
+    .Text {
+        @include Font($MinTextSize, $TextSize, $MaxTextSize, $FamilyFont, $FontColorD, bold);
+    }
+
+    .Title {
+        text-align: center;
+        @include Font($MinTitleSize, $TitleSize, $MaxTitleSize, $FamilyFont, red, bold);
+    }
+}
+
+/* --------------------- Sounds --------------------- */
+.Sound {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    #Mensaje {
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    #Mensaje {
+        width: 80%;
+    }
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="Es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sass/Styles.css">
+    <link rel="shortcut icon" href="Icons/Corazon.png" type="image/x-icon">
+    <title> Para la niña que me gusta </title>
+</head>
+
+<body>
+    <button class="Heart" onclick="Click()">
+        <audio class="Sound" id="Pop" controls>
+            <source type="audio/mp3" src="Sounds/Pop.mp3">
+        </audio>
+        <div class="Contenido">
+            <img src="Icons/Corazon.png" alt="">
+            <h5 class="Nums" id="Valores"> 0 </h5>
+        </div>
+    </button>
+    <div id="Valores"></div>
+    <article id="Notificacion">
+        <audio class="Sound" id="Notf" controls>
+            <source type="audio/mp3" src="Sounds/Notificacion.mp3">
+        </audio>
+        <img id="Imagen" src="Icons/Mensaje.png" alt="">
+    </article>
+    <!-------------------------- Notificaciones -------------------------->
+    <!-------------------------- 1 -------------------------->
+    <article id="Mensaje" class="Ms1">
+        <button class="Close" onclick="Cerrar()">
+            <audio class="Sound" id="Plop" controls>
+                <source type="audio/mp3" src="Sounds/Plop.mp3">
+            </audio>
+            <img src="Icons/Cerrar.png" alt="">
+        </button>
+        <div class="Imagen">
+            <img src="Images/Programar.jpg" alt="">
+        </div>
+        <h5 class="Title"> Programándote una carta </h5>
+        <p class="Text">
+            Ya que la distancia me impide darte una carta, ¿Por qué no programarte una? 😄 <br>
+            Bueno, a ver si puedes presionar todos los botones 🤭. Ahora ya sabes para qué era el número ¿No?
+        </p>
+        <audio class="Sound" id="Zas" controls>
+            <source type="audio/mp3" src="Sounds/Zas.mp3">
+        </audio>
+    </article>
+    <!-------------------------- 2 -------------------------->
+    <article id="Mensaje" class="Ms2">
+        <button class="Close" onclick="Cerrar()">
+            <audio class="Sound" id="Plop" controls>
+                <source type="audio/mp3" src="Sounds/Plop.mp3">
+            </audio>
+            <img src="Icons/Cerrar.png" alt="">
+        </button>
+        <div class="Imagen">
+            <img src="Images/Distancia.jpg" alt="">
+        </div>
+        <h5 class="Title"> Ninguna distancia me impedirá amarte ❤ </h5>
+        <p class="Text">
+            Aunque sea de lejos, sabes que te ame con todo mi corazón 💘
+        </p>
+        <audio class="Sound" id="Zas" controls>
+            <source type="audio/mp3" src="Sounds/Zas.mp3">
+        </audio>
+    </article>
+    <!-------------------------- 3 -------------------------->
+    <article id="Mensaje" class="Ms3">
+        <button class="Close" onclick="Cerrar()">
+            <audio class="Sound" id="Plop" controls>
+                <source type="audio/mp3" src="Sounds/Plop.mp3">
+            </audio>
+            <img src="Icons/Cerrar.png" alt="">
+        </button>
+        <div class="Imagen">
+            <img src="Images/Corazon.jpg" alt="">
+        </div>
+        <h5 class="Title"> Me encantas ❤ </h5>
+        <p class="Text">
+            A decir verdad no tengo manera de decirte, o expresarme de la manera que me gustaría, para decirte lo mucho
+            que te amo.
+        </p>
+        <audio class="Sound" id="Zas" controls>
+            <source type="audio/mp3" src="Sounds/Zas.mp3">
+        </audio>
+    </article>
+    <!-------------------------- 4 -------------------------->
+    <article id="Mensaje" class="Ms4">
+        <button class="Close" onclick="Cerrar()">
+            <audio class="Sound" id="Plop" controls>
+                <source type="audio/mp3" src="Sounds/Plop.mp3">
+            </audio>
+            <img src="Icons/Cerrar.png" alt="">
+        </button>
+        <div class="Imagen Big">
+            <img src="Images/TeQuiero.jpg" alt="">
+        </div>
+        <h5 class="Title">❤ Te amo ❤</h5>
+        <p class="Text">
+            Tú eres quien me hace, no querer nada con nadie más que no seas tú, quiero que seas tú como mínimo el resto
+            de mi eternidad.
+        </p>
+        <audio class="Sound" id="Zas" controls>
+            <source type="audio/mp3" src="Sounds/Zas.mp3">
+        </audio>
+    </article>
+    <!-------------------------- 5 -------------------------->
+    <article id="Mensaje" class="Ms5">
+        <button class="Close" onclick="Cerrar()">
+            <audio class="Sound" id="Plop" controls>
+                <source type="audio/mp3" src="Sounds/Plop.mp3">
+            </audio>
+            <img src="Icons/Cerrar.png" alt="">
+        </button>
+        <div class="Imagen">
+            <img src="Images/Excusas.jpg" alt="">
+        </div>
+        <h5 class="Title"> Sin excusas </h5>
+        <p class="Text">
+            Poniéndonos en la meta de cumplir nuestro sueño de llegar a estar juntos, sin nadie que nos lo impida.
+        </p>
+        <audio class="Sound" id="Zas" controls>
+            <source type="audio/mp3" src="Sounds/Zas.mp3">
+        </audio>
+    </article>
+    <!-------------------------- 6 -------------------------->
+    <article id="Mensaje" class="Ms6">
+        <button class="Close" onclick="Cerrar()">
+            <audio class="Sound" id="Plop" controls>
+                <source type="audio/mp3" src="Sounds/Plop.mp3">
+            </audio>
+            <img src="Icons/Cerrar.png" alt="">
+        </button>
+        <div class="Imagen Big">
+            <img src="Images/Arte.jpg" alt="">
+        </div>
+        <h5 class="Title">Que obra maestra ❤</h5>
+        <p class="Text">
+            Sin ninguna duda, eres lo más hermoso que he visto, me dejas boqui abierto de la novia tan hermosa que
+            tengo, no sé qué hice para merecerte.
+        </p>
+        <audio class="Sound" id="Zas" controls>
+            <source type="audio/mp3" src="Sounds/Zas.mp3">
+        </audio>
+    </article>
+    <!-------------------------- 7 -------------------------->
+    <article id="Mensaje" class="Ms7">
+        <button class="Close" onclick="Cerrar()">
+            <audio class="Sound" id="Plop" controls>
+                <source type="audio/mp3" src="Sounds/Plop.mp3">
+            </audio>
+            <img src="Icons/Cerrar.png" alt="">
+        </button>
+        <div class="Imagen Big">
+            <img src="Images/Bombon.jpg" alt="">
+        </div>
+        <h5 class="Title">Gracias por estar en mi vida ❤</h5>
+        <p class="Text">
+            La vida me trajo hasta ti por alguna razón, y sea cual sea esa razón, estoy totalmente de acuerdo si estás
+            en ella.
+        </p>
+        <audio class="Sound" id="Zas" controls>
+            <source type="audio/mp3" src="Sounds/Zas.mp3">
+        </audio>
+    </article>
+    <!-------------------------- 8 -------------------------->
+    <article id="Mensaje" class="Ms8">
+        <button class="Close" onclick="Cerrar()">
+            <audio class="Sound" id="Plop" controls>
+                <source type="audio/mp3" src="Sounds/Plop.mp3">
+            </audio>
+            <img src="Icons/Cerrar.png" alt="">
+        </button>
+        <div class="Imagen">
+            <img src="Images/Celos.jpg" alt="">
+        </div>
+        <h5 class="Title">¿Cómo no tener celos?</h5>
+        <p class="Text">
+            Cómo no los voy a tener, si me genera miedo perder a la niña que me gusta. <br>
+            A de aclarar que no es acoso :^, es proteger a la niña con la que me casaré más a futuro :^
+        </p>
+        <audio class="Sound" id="Zas" controls>
+            <source type="audio/mp3" src="Sounds/Zas.mp3">
+        </audio>
+    </article>
+    <!-------------------------- 9 -------------------------->
+    <article id="Mensaje" class="Ms9">
+        <button class="Close" onclick="Cerrar()">
+            <audio class="Sound" id="Plop" controls>
+                <source type="audio/mp3" src="Sounds/Plop.mp3">
+            </audio>
+            <img src="Icons/Cerrar.png" alt="">
+        </button>
+        <div class="Imagen Big">
+            <img src="Images/Diciembre.jpg" alt="">
+        </div>
+        <h5 class="Title">Un Diciembre juntos</h5>
+        <p class="Text">
+            Esperando por algún día que estemos un diciembre y más juntos.
+        </p>
+        <audio class="Sound" id="Zas" controls>
+            <source type="audio/mp3" src="Sounds/Zas.mp3">
+        </audio>
+    </article>
+    <!-------------------------- 10 -------------------------->
+    <article id="Mensaje" class="Ms10">
+        <button class="Close" onclick="Cerrar()">
+            <audio class="Sound" id="Plop" controls>
+                <source type="audio/mp3" src="Sounds/Plop.mp3">
+            </audio>
+            <img src="Icons/Cerrar.png" alt="">
+        </button>
+        <div class="Imagen">
+            <img src="Images/MeEncantas.jpg" alt="">
+        </div>
+        <h5 class="Title">A la perfección para mí ❤</h5>
+        <p class="Text">
+            No me explico cómo tienes todo lo que me encanta, estoy seguro de que eres el amor de mi vida, lo tienes
+            todo. ❤
+        </p>
+        <audio class="Sound" id="Zas" controls>
+            <source type="audio/mp3" src="Sounds/Zas.mp3">
+        </audio>
+    </article>
+    <!-------------------------- 11 -------------------------->
+    <article id="Mensaje" class="Ms11">
+        <button class="Close" onclick="Cerrar()">
+            <audio class="Sound" id="Plop" controls>
+                <source type="audio/mp3" src="Sounds/Plop.mp3">
+            </audio>
+            <img src="Icons/Cerrar.png" alt="">
+        </button>
+        <div class="Imagen Big">
+            <img src="Images/Hablar.jpg" alt="">
+        </div>
+        <h5 class="Title">Es mejor en persona</h5>
+        <p class="Text">
+            No me disgusta, pero tampoco me gusta la idea de que estemos tan lejos, sabiendo lo mucho que te amo. :(
+        </p>
+        <audio class="Sound" id="Zas" controls>
+            <source type="audio/mp3" src="Sounds/Zas.mp3">
+        </audio>
+    </article>
+    <!-------------------------- 12 -------------------------->
+    <article id="Mensaje" class="Ms12">
+        <button class="Close" onclick="Cerrar()">
+            <audio class="Sound" id="Plop" controls>
+                <source type="audio/mp3" src="Sounds/Plop.mp3">
+            </audio>
+            <img src="Icons/Cerrar.png" alt="">
+        </button>
+        <div class="Imagen">
+            <img src="Images/TickTack.jpg" alt="">
+        </div>
+        <h5 class="Title">Cada vez falta más poco ❤</h5>
+        <p class="Text">
+            Anhelo el día en que nos podamos ver y abrazar. 🥺
+        </p>
+        <audio class="Sound" id="Zas" controls>
+            <source type="audio/mp3" src="Sounds/Zas.mp3">
+        </audio>
+    </article>
+    <!-------------------------- 13 -------------------------->
+    <article id="Mensaje" class="Ms13">
+        <h5 class="Title">❤ Recuerda que te amo ❤</h5>
+        <p class="Text">
+            Recuerda siempre lo mucho que te amo, es algo pequeño decir "Te amo", a comparación de lo que siento por ti,
+            me sorprende como siempre me hipnotizas.
+        </p>
+        <div class="Imagen">
+            <img src="Images/TeAmo.png" alt="">
+        </div>
+        <audio class="Sound" id="Zas" controls>
+            <source type="audio/mp3" src="Sounds/Zas.mp3">
+        </audio>
+    </article>
+    <!-------------------------- X -------------------------->
+</body>
+<script src="Scripts/Script.js"></script>
+
+</html>
